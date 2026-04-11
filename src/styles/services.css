@@ -1,0 +1,251 @@
+.service-detail {
+  background: var(--cream);
+  padding: clamp(4rem, 6vw, 6rem) 5%;
+}
+
+.service-alt {
+  background: var(--white);
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.service-detail-grid-rev .service-detail-text {
+  order: 2;
+}
+
+.service-detail-grid-rev .service-detail-visual {
+  order: 1;
+}
+
+.service-detail-visual {
+  position: relative;
+}
+
+.sdv-main {
+  border-radius: var(--radius-lg);
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.5rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--green-mid), var(--green-fresh));
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sdv-main:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+}
+
+.sdv-badge {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+}
+
+.sdv-accent {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 0.9rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--green-deep);
+  transition: all 0.3s ease;
+}
+
+.sdv-accent:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.service-detail-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.85;
+  font-size: 1rem;
+}
+
+.service-features {
+  margin-top: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  transition: 0.2s ease;
+}
+
+.service-features li:hover {
+  transform: translateX(4px);
+}
+
+.sf-check {
+  width: 22px;
+  height: 22px;
+  background: var(--green-pale);
+  color: var(--green-deep);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.contrats {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.contrat-badge {
+  flex: 1;
+  min-width: 140px;
+  background: var(--green-pale);
+  border-radius: var(--radius);
+  padding: 1rem 1.2rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contrat-badge:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.cb-title {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--green-deep);
+}
+
+.cb-desc {
+  font-size: 0.78rem;
+  color: var(--text-light);
+}
+
+.processus-section {
+  background: var(--green-deep);
+  padding: clamp(4rem, 6vw, 6rem) 5%;
+}
+
+.processus-section .section-label {
+  color: var(--green-light);
+}
+
+.processus-section .section-title {
+  color: var(--white);
+}
+
+.processus-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  min-width: 180px;
+  max-width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+}
+
+.step-num {
+  font-size: 3.5rem;
+  color: rgba(255, 255, 255, 0.12);
+  margin-bottom: 0.5rem;
+}
+
+.step h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.step p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.step-arrow {
+  font-size: 1.5rem;
+  color: var(--green-light);
+  padding-top: 2rem;
+}
+
+@media (max-width: 900px) {
+  .service-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail-grid-rev .service-detail-text,
+  .service-detail-grid-rev .service-detail-visual {
+    order: unset;
+  }
+
+  .sdv-main {
+    height: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sdv-main {
+    height: 220px;
+    font-size: 3rem;
+  }
+
+  .sdv-accent {
+    right: 0;
+    bottom: -0.5rem;
+  }
+
+  .processus-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .step {
+    max-width: 280px;
+  }
+}

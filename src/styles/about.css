@@ -1,0 +1,151 @@
+.story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.story-text p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.story-card {
+  background: linear-gradient(135deg, var(--green-deep), var(--green-mid));
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+.story-card::before {
+  content: '"';
+  position: absolute;
+  top: -1rem;
+  left: 1.5rem;
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.05);
+}
+
+.story-card-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.story-card blockquote {
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+}
+
+.story-card cite {
+  font-size: 0.8rem;
+  color: var(--green-light);
+  letter-spacing: 0.12em;
+}
+
+.valeurs-section {
+  background: linear-gradient(180deg, var(--cream-dark), #f8f4ec);
+}
+
+.valeur-card {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s ease;
+}
+
+.valeur-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.15);
+}
+
+.valeur-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.valeur-card:hover .valeur-icon {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.equipe-section {
+  background: var(--cream);
+}
+
+.team-card {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 35px 100px rgba(0, 0, 0, 0.2);
+}
+
+.team-avatar {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: white;
+  background: linear-gradient(135deg, var(--green-mid), var(--green-fresh));
+}
+
+.team-info {
+  padding: 1.5rem;
+}
+
+.team-info h4 {
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green-fresh);
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 1024px) {
+  .story-grid {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .team-avatar {
+    height: 120px;
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .valeur-card {
+    padding: 2rem 1.5rem;
+  }
+}
