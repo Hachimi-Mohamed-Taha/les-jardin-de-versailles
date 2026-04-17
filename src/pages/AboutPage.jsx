@@ -44,8 +44,7 @@ export default function AboutPage() {
                 <blockquote>
                   « Un jardin bien conçu est une conversation permanente entre l'homme et la nature. »
                 </blockquote>
-                <cite>— Karim Alaoui, Fondateur</cite>
-              </div>
+    </div>
             </div>
           </Reveal>
         </div>
@@ -97,51 +96,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section equipe-section">
-        <div style={{ textAlign: "center", maxWidth: "600px", margin: "0 auto 3.5rem" }}>
-          <Reveal>
-            <p className="section-label">Les hommes et femmes derrière Verdura</p>
-          </Reveal>
-          <Reveal>
-            <h2 className="section-title">Notre équipe</h2>
-          </Reveal>
-        </div>
-
-        <div className="grid-3">
-          <Reveal className="team-card card">
-            <>
-              <div className="team-avatar">K</div>
-              <div className="team-info">
-                <h4>Karim Alaoui</h4>
-                <span className="team-role">Fondateur & Paysagiste</span>
-                <p>Diplômé de l'École nationale d'agriculture de Meknès, 15 ans d'expérience.</p>
-              </div>
-            </>
-          </Reveal>
-
-          <Reveal className="team-card card" delay="fade-in-delay-1">
-            <>
-              <div className="team-avatar">S</div>
-              <div className="team-info">
-                <h4>Salma Benali</h4>
-                <span className="team-role">Architecte paysagiste</span>
-                <p>Spécialiste en jardins méditerranéens et systèmes d'irrigation innovants.</p>
-              </div>
-            </>
-          </Reveal>
-
-          <Reveal className="team-card card" delay="fade-in-delay-2">
-            <>
-              <div className="team-avatar">Y</div>
-              <div className="team-info">
-                <h4>Youssef Tahiri</h4>
-                <span className="team-role">Chef d'équipe terrain</span>
-                <p>Expert en taille artistique et aménagements floraux pour événements.</p>
-              </div>
-            </>
-          </Reveal>
-        </div>
-      </section>
 
       <CTASection
         title="Vous voulez en savoir plus ?"
