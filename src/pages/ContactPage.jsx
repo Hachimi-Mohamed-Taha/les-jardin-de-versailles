@@ -44,7 +44,8 @@ export default function ContactPage() {
                     <span className="info-value">
                       Rabat, Maroc
                       <br />
-                      Interventions dans tout le Grand Rabat
+                      21, rue Al Gharb - Aviation - Rabat  
+t
                     </span>
                   </div>
                 </>
@@ -56,7 +57,7 @@ export default function ContactPage() {
                   <div>
                     <span className="info-label">Téléphone</span>
                     <a href="tel:+212600000000" className="info-value info-link">
-                      +212 6 00 00 00 00
+                      05 37 65 72 85
                     </a>
                   </div>
                 </>
@@ -68,7 +69,7 @@ export default function ContactPage() {
                   <div>
                     <span className="info-label">E-mail</span>
                     <a
-                      href="mailto:contact@verdura.ma"
+                      href=" jardinsdeversailles@gmail.com"
                       className="info-value info-link"
                     >
                       contact@verdura.ma
@@ -82,7 +83,7 @@ export default function ContactPage() {
                   <div className="info-icon">🕐</div>
                   <div>
                     <span className="info-label">Horaires</span>
-                    <span className="info-value">Lun – Sam : 8h00 – 18h00</span>
+                    <span className="info-value">Lun – Sam : 10h00 – 16h00</span>
                   </div>
                 </>
               </Reveal>
@@ -120,7 +121,7 @@ export default function ContactPage() {
               <span>📍</span>
               <div>
                 <strong>Les jardins de Versailles</strong>
-                <span>Rabat, Maroc — Interventions dans tout le Grand Rabat</span>
+                <span>Rabat, Maroc —21, rue Al Gharb - Aviation -   </span>
               </div>
             </div>
           </>
