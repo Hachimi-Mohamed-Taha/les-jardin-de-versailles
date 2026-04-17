@@ -72,7 +72,7 @@ t
                       href=" jardinsdeversailles@gmail.com"
                       className="info-value info-link"
                     >
-                      contact@verdura.ma
+                      jardinsdeversailles@gmail.com
                     </a>
                   </div>
                 </>
