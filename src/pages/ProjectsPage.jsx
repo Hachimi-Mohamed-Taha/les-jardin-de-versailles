@@ -43,55 +43,7 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <section className="section temoignages-section">
-        <Reveal>
-          <p className="section-label" style={{ textAlign: "center" }}>
-            Ce que disent nos clients
-          </p>
-        </Reveal>
-
-        <Reveal>
-          <h2
-            className="section-title"
-            style={{ textAlign: "center", marginBottom: "3rem" }}
-          >
-            Témoignages
-          </h2>
-        </Reveal>
-
-        <div className="grid-3">
-          <Reveal className="temoignage-card">
-            <>
-              <div className="stars">★★★★★</div>
-              <p>
-                « Équipe très professionnelle, à l'écoute et créative. Notre jardin est
-                méconnaissable — en mieux ! »
-              </p>
-              <cite>— Nadia B., Villa Souissi</cite>
-            </>
-          </Reveal>
-
-          <Reveal className="temoignage-card" delay="fade-in-delay-1">
-            <>
-              <div className="stars">★★★★★</div>
-              <p>
-                « Verdura gère l'entretien de nos espaces verts depuis 3 ans. Toujours impeccable et ponctuel. »
-              </p>
-              <cite>— Mohamed A., Directeur général</cite>
-            </>
-          </Reveal>
-
-          <Reveal className="temoignage-card" delay="fade-in-delay-2">
-            <>
-              <div className="stars">★★★★★</div>
-              <p>
-                « Un devis clair, un travail soigné et un résultat qui dépasse nos attentes. Je recommande vivement. »
-              </p>
-              <cite>— Sara L., Résidence Hay Riad</cite>
-            </>
-          </Reveal>
-        </div>
-      </section>
+     
 
       <CTASection
         title="Votre projet sera le prochain."
