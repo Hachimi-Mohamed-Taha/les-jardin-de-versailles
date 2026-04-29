@@ -67,7 +67,7 @@ export default function HomePage() {
         <div className="stat-sep"></div>
 
         <Reveal className="stat" delay="fade-in-delay-1">
-          <span className="stat-num">12</span>
+          <span className="stat-num">32</span>
           <span className="stat-label">Années d'expérience</span>
         </Reveal>
 
