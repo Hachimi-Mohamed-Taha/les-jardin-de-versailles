@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
 
         <div className="hero-badge">
-          <span className="badge-num">12+</span>
+          <span className="badge-num">30+</span>
           <span className="badge-txt">ans d'expertise</span>
         </div>
       </section>
