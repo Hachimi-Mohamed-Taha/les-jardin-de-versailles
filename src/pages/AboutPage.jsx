@@ -6,7 +6,7 @@ import Reveal from "../components/shared/Reveal";
 export default function AboutPage() {
   return (
     <MainLayout>
-      <PageHero label="Notre entreprise" before="À propos de" highlight="Verdura" />
+      <PageHero label="Notre entreprise" before="À propos de" highlight="Les jardins de Versailles" />
 
       <section className="section">
         <div className="story-grid">
@@ -22,7 +22,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal>
               <p style={{ marginBottom: "1.2rem" }}>
-                Fondée en 2013 à Rabat, Verdura est née de la passion d'un paysagiste
+                Fondée en 1998 à Rabat, Les jardins de Versailles est née de la passion d'un paysagiste
                 pour la nature et l'art du jardin. Ce qui a commencé comme une petite
                 entreprise artisanale s'est transformé en une équipe de 15 experts
                 dédiés à embellir les espaces verts de la région.
