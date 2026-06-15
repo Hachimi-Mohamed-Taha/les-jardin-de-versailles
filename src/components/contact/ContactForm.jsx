@@ -19,7 +19,7 @@ export default function ContactForm() {
   const [success, setSuccess] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const FORM_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+  const FORM_ENDPOINT = "https://formspree.io/f/xlgkzggj";
 
   function handleChange(e) {
     const { name, value } = e.target;
